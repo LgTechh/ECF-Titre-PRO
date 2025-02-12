@@ -1,0 +1,148 @@
+{
+    "events": [
+      {
+        "id": "invention_ecriture",
+        "title": "Invention de l'écriture",
+        "date": "-3500 av. J.-C.",
+        "description": "Premières écritures cunéiformes en Mésopotamie.",
+        "category": "technologie",
+        "shape": "square",
+        "image": "img/ecriture.jpg",
+        "periode": "Antiquité",
+        "lien": "https://fr.wikipedia.org/wiki/Histoire_de_l%27%C3%A9criture"
+      },
+      {
+        "id": "pyramides",
+        "title": "Construction des pyramides",
+        "date": "-2600 av. J.-C.",
+        "description": "Début de la construction des grandes pyramides d'Égypte.",
+        "category": "majeur",
+        "shape": "star",
+        "image": "img/Pyramides.jpg",
+        "periode": "Antiquité",
+        "lien": "https://fr.wikipedia.org/wiki/Pyramides_d%27%C3%89gypte"
+      },
+      {
+        "id": "code_hammourabi",
+        "title": "Code de Hammourabi",
+        "date": "-1754 av. J.-C.",
+        "description": "Première grande compilation de lois.",
+        "category": "politique",
+        "shape": "triangle",
+        "image": "img/hammourabi.jpg",
+        "periode": "Antiquité",
+        "lien": "https://fr.wikipedia.org/wiki/Code_de_Hammurabi"
+      },
+      {
+        "id": "naissance_democratie",
+        "title": "Naissance de la démocratie",
+        "date": "-507 av. J.-C.",
+        "description": "Introduction de la démocratie à Athènes par Clisthène.",
+        "category": "politique",
+        "shape": "triangle",
+        "image": "img/democratie.jpg",
+        "periode": "Antiquité",
+        "lien": "https://www.histoirealacarte.com/Grece-antique-monde-hellenistique/democratie-Athenes#:~:text=En%20508%2D507%2C%20les%20r%C3%A9formes,la%20c%C3%B4te%20et%20l'int%C3%A9rieur."
+      },
+      {
+        "id": "chute_rome",
+        "title": "Chute de l'Empire Romain",
+        "date": "476",
+        "description": "Fin de l'Empire romain d'Occident.",
+        "category": "majeur",
+        "shape": "star",
+        "image": "img/chute_rome.jpg",
+        "periode": "Moyen-Age",
+        "lien": "https://www.alloprof.qc.ca/fr/eleves/bv/histoire/la-chute-de-l-empire-romain-h1701"
+      },
+      {
+        "id": "decouverte_amerique",
+        "title": "Découverte de l'Amérique",
+        "date": "1492",
+        "description": "Christophe Colomb atteint le Nouveau Monde.",
+        "category": "decouverte",
+        "shape": "circle",
+        "image": "img/DecouvAme.jpg",
+        "periode": "Epoque Moderne",
+        "lien": "https://fr.wikipedia.org/wiki/D%C3%A9couverte_et_exploration_de_l%27Am%C3%A9rique"
+      },
+      {
+        "id": "renaissance",
+        "title": "Période de la  Renaissance",
+        "date": "XIVe au XVIIe siècle",
+        "description": "Période de renouveau artistique et scientifique en Europe.",
+        "category": "majeur",
+        "shape": "star",
+        "image": "img/renaissance.jpg",
+        "periode": "Epoque Moderne",
+        "lien": "https://fr.wikipedia.org/wiki/Renaissance"
+      },
+      {
+        "id": "revolution_francaise",
+        "title": "Révolution française",
+        "date": "1789",
+        "description": "Début de la Révolution qui changera la France.",
+        "category": "politique",
+        "shape": "triangle",
+        "image": "img/revolution.jpg",
+        "periode": "Epoque Contemporaine",
+        "lien": "https://fr.wikipedia.org/wiki/R%C3%A9volution_fran%C3%A7aise"
+      },
+      {
+        "id": "independance_usa",
+        "title": "Indépendance des États-Unis",
+        "date": "1776",
+        "description": "Les États-Unis déclarent leur indépendance vis-à-vis du Royaume-Uni.",
+        "category": "politique",
+        "shape": "triangle",
+        "image": "img/independance_usa.jpg",
+        "periode": "Epoque Moderne",
+        "lien": "https://fr.wikipedia.org/wiki/Jour_de_l%27Ind%C3%A9pendance_(%C3%89tats-Unis)#:~:text=Le%20Jour%20de%20l'Ind%C3%A9pendance,vis%20de%20la%20Grande%2DBretagne."
+      },
+      {
+        "id": "premiere_guerre_mondiale",
+        "title": "Première Guerre mondiale",
+        "date": "1914-1918",
+        "description": "Conflit mondial majeur du XXe siècle.",
+        "category": "guerre",
+        "shape": "hexagon",
+        "image": "img/ww1.jpg",
+        "periode": "Epoque Contemporaine",
+        "lien": "https://fr.wikipedia.org/wiki/Premi%C3%A8re_Guerre_mondiale#:~:text=La%20Premi%C3%A8re%20Guerre%20mondiale%2C%20aussi,guerre%20de%2014%2D18%20%C2%BB."
+      },
+      {
+        "id": "seconde_guerre_mondiale",
+        "title": "Seconde Guerre mondiale",
+        "date": "1939-1945",
+        "description": "Guerre impliquant la quasi-totalité des grandes puissances.",
+        "category": "guerre",
+        "shape": "hexagon",
+        "image": "img/ww2.webp",
+        "periode": "Epoque Contemporaine",
+        "lien": "https://fr.wikipedia.org/wiki/Seconde_Guerre_mondiale"
+      },
+      {
+        "id": "premier_homme_lune",
+        "title": "Premier homme sur la Lune",
+        "date": "1969",
+        "description": "Neil Armstrong marche sur la Lune lors de la mission Apollo 11.",
+        "category": "technologie",
+        "shape": "square",
+        "image": "img/lune.jpg",
+        "periode": "Epoque Contemporaine",
+        "lien": "https://fr.wikipedia.org/wiki/Apollo_11"
+      },
+      {
+        "id": "internet",
+        "title": "Naissance d'Internet",
+        "date": "1989",
+        "description": "Création du World Wide Web par Tim Berners-Lee.",
+        "category": "technologie",
+        "shape": "square",
+        "image": "img/internet.jpg",
+        "periode": "Epoque Contemporaine",
+        "lien": "https://fr.wikipedia.org/wiki/World_Wide_Web"
+      }
+    ]
+  }
+  

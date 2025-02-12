@@ -1,0 +1,576 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Merriweather&family=Playfair+Display:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+body {
+    font-family: 'Merriweather', sans-serif;
+    background-color: #F8F9FA;
+    color: #333;
+    min-height: 100%;
+
+}
+
+@media screen and (max-width: 767px) {
+    .header {
+        width: 100%;
+        height: 200px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .frise {
+        content: url("img/Nfrise_Tel.webp");
+        width: 40%;
+        height: 1008px;
+    }
+
+    .pageFrise {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .top_container {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    .frise_container {
+        right: 15%;
+    }
+
+    .legend {
+        width: 100%;
+    }
+
+}
+
+main {
+    flex: 1;
+}
+.pageIntro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 20px;
+    gap: 20px;
+    padding-bottom: 50px;
+}
+
+
+h1,
+h2 {
+    font-family: 'Playfair Display', serif;
+    color: #D4AF37;
+    text-align: center;
+}
+
+.fade-out {
+    animation: fadeOut 1s forwards;
+}
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.visible {
+    opacity: 1;
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+.pageIntro p {
+    font-family: 'EB Garamond', serif;
+}
+
+.pageFrise {
+    display: none;
+}
+
+.legend {
+    display: flex;
+    flex-direction: column;
+}
+
+.legend h2 {
+    padding-bottom: 20px;
+}
+
+.formLegend img {
+    height: 30px;
+    width: 30px;
+    filter: brightness(90%);
+}
+
+.startSite {
+    background: linear-gradient(45deg, #8B5E3C, #C49A6C);
+    color: white;
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+.startSite::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    height: 100%;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+.startSite:hover::before {
+    left: 100%;
+}
+
+.startSite:hover {
+    transform: scale(1.05);
+}
+
+.frise_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+@media screen and (min-width: 767px) {
+    .header {
+        width: 100%;
+        max-height: 200px;
+        object-fit: cover;
+    }
+    .frise {
+        content: url("img/Nfrise.webp");
+        width: 100%;
+        height: 100%;
+    }
+
+    .frise_container {
+        margin-top: 10vh;
+    }
+
+    .pageFrise {
+        flex-direction: column;
+    }
+
+    .legend {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+        align-content: center;
+    }
+}
+
+.event-marker {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    transform: translate(-50%, -50%);
+    filter: brightness(90%);
+    cursor: pointer;
+}
+
+.circle {
+    border-radius: 50%;
+}
+
+.square {
+    width: 16px;
+    height: 16px;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 18px solid;
+}
+
+.star {
+    width: 20px;
+    height: 20px;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
+.hexagon {
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.event-marker.technologie { background-color: blue; }
+.event-marker.majeur { background-color: gold; width: 18px; height: 18px; }
+.event-marker.decouverte { background-color: green; }
+.event-marker.politique { border-bottom: 18px solid #303030 ; }
+.event-marker.guerre { background-color: red; }
+
+@media screen and (min-width: 767px) {
+    .event-marker[data-event-id="invention_ecriture"] {
+        top: 18%;
+        left: 3.5%;
+    }
+
+    .event-marker[data-event-id="pyramides"] {
+        top: 62%;
+        left: 21.7%;
+    }
+
+    .event-marker[data-event-id="code_hammourabi"] {
+        top : 18%;
+        left: 33%;
+    }
+
+    .event-marker[data-event-id="naissance_democratie"] {
+        top : 62%;
+        left: 53%;
+    }
+
+    .event-marker[data-event-id="chute_rome"] {
+        top: 18%;
+        left: 69%;
+    }
+
+    .event-marker[data-event-id="decouverte_amerique"] {
+        top: 62%;
+        left: 85.8%;
+    }
+
+    .event-marker[data-event-id="renaissance"] {
+        top: 18%;
+        left: 85.9%;
+    }
+
+    .event-marker[data-event-id="revolution_francaise"] {
+        top: 62%;
+        left: 90.9%;
+    }
+
+    .event-marker[data-event-id="independance_usa"] {
+        top: 18%;
+        left: 90.4%;
+    }
+
+    .event-marker[data-event-id="premiere_guerre_mondiale"] {
+        top: 62%;
+        left: 92.1%;
+    }
+
+    .event-marker[data-event-id="seconde_guerre_mondiale"] {
+        top: 18%;
+        left: 92.3%;
+    }
+
+    .event-marker[data-event-id="premier_homme_lune"] {
+        top: 62%;
+        left: 93.5%;
+    }
+
+    .event-marker[data-event-id="internet"] {
+        top: 18%;
+        left: 94%;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+
+    .event-marker[data-event-id="invention_ecriture"] {
+        top: 3.5%;
+        left: 63%;
+    }
+
+    .event-marker[data-event-id="pyramides"] {
+        top: 18%;
+        left: 45.2%;
+    }
+
+    .event-marker[data-event-id="code_hammourabi"] {
+        top: 32%;
+        left: 63%;
+    }
+
+    .event-marker[data-event-id="naissance_democratie"] {
+        top: 52.6%;
+        left: 45.2%;
+    }
+
+    .event-marker[data-event-id="chute_rome"] {
+        top: 65%;
+        left: 63%;
+    }
+
+    .event-marker[data-event-id="decouverte_amerique"] {
+        top: 85.5%;
+        left: 45.2%;
+    }
+
+    .event-marker[data-event-id="renaissance"] {
+        top: 85.8%;
+        left: 63%;
+    }
+
+    .event-marker[data-event-id="revolution_francaise"] {
+        top: 90%;
+        left: 45.2%;
+    }
+
+    .event-marker[data-event-id="independance_usa"] {
+        top: 89.7%;
+        left: 63%;
+    }
+
+    .event-marker[data-event-id="premiere_guerre_mondiale"] {
+        top: 92%;
+        left: 45.2%;
+    }
+
+    .event-marker[data-event-id="seconde_guerre_mondiale"] {
+        top: 93%;
+        left: 63%;
+    }
+
+    .event-marker[data-event-id="premier_homme_lune"] {
+        top: 93%;
+        left: 45.2%;
+    }
+
+    .event-marker[data-event-id="internet"] {
+        top: 94%;
+        left: 63%;
+    }
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.modal-content img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    padding: 10px 0;
+
+}
+
+#modal-title {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+#modal-description {
+    text-align: left;
+}
+
+.modal-lien {
+    all: unset;
+    display: block;
+    margin-left: auto;
+
+}
+
+.modal-lien a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #888;
+    margin-top: 20px;
+    padding-top: 15px;
+}
+
+#modal-periode {
+    color: #D4AF37;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1em;
+}
+
+#modal-date {
+    color: #7D3C98;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+    .textEnt {
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 767px) {
+    .textEnt {
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+        text-align: center;
+    }
+}
+footer {
+    background-color: #E9ECEF;
+    color: #333;
+    text-align: center;
+    padding: 15px;
+    font-family: 'Merriweather', serif;
+    border-top: 2px solid #ddd;
+    width: 100%;
+}
+
+footer .copyright {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+footer .citation {
+    font-size: 12px;
+    font-style: italic;
+    color: #D4AF37;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-brand {
+    font-family: 'Playfair Display', serif;
+    color: #D4AF37;
+    font-size: 1.5rem;
+}
+
+.navbar-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    display: block;
+    font-family: 'Merriweather', sans-serif;
+}
+
+.navbar-links li a:hover {
+    color: #D4AF37;
+}
+
+.toggle-button {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 767px) {
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar-links li {
+        text-align: center;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 767px) {
+    .toggle-button {
+        display: none;
+    }
+
+    .navbar-links {
+        display: flex !important;
+    }
+}

@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1, maximum-scale=5">
+  <meta name="description" content="Découvrez l'histoire de l'humanité à travers une frise chronologique">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preload" href="img/nHeaderPc.webp" as="image">
+  <title>Historical Moments</title>
+</head>
+<body>
+<nav class="navbar">
+  <div class="nav-brand">Historical Moments</div>
+  <a href="#" class="toggle-button">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </a>
+  <div class="navbar-links">
+    <ul>
+      <li><a href="#" class="home-link">Accueil</a></li>
+    </ul>
+  </div>
+</nav>
+<header>
+  <img class="header" src="img/nHeaderPc.webp" alt="Photo Header">
+</header>
+<main>
+  <div class="pageIntro">
+    <h1>Introduction</h1>
+    <p>Sur ce site, vous pourrez trouver une frise chronologique qui retrace des moments clés de l'histoire de l'humanité</p>
+    <p>Pour vous guider une Légende sera affiché sur le côté de votre écran</p>
+    <p>Bon amusement</p>
+    <button class="startSite">Commencer l'aventure</button>
+  </div>
+
+  <div class="pageFrise">
+    <div class="top_container">
+      <div class="legend">
+        <h2>Légende :</h2>
+        <p>
+        <div class="formLegend"><img class="carreLegend" src="img/carre.webp" alt="star Image"> Technologique</div>
+        <br />
+        <br />
+        <div class="formLegend"><img src="img/star.webp" alt="star Image"> Majeur</div>
+        <br />
+        <br />
+        <div class="formLegend"><img src="img/rond.webp" alt="rond Image"> Découverte</div>
+        <br />
+        <br />
+        <div class="formLegend"><img src="img/triangle.webp" alt="triangle Image"> Politique</div>
+        <br />
+        <br />
+        <div class="formLegend"><img src="img/hexagon.webp" alt="hexagonImage"> Guerre</div>
+        </p>
+      </div>
+      <div class="frise_container">
+        <img class="frise" src="" alt="frise chronologique de -3500 av JC à 2025">
+      </div>
+      <div id="modal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <img id="modal-image" src="" alt="">
+          <h2 id="modal-title"></h2>
+          <p id="modal-description"></p>
+          <button class="modal-lien"><a id="modal-lien" href="">🔗</a></button>
+          <div class="modal-footer">
+            <p id="modal-periode"></p>
+            <p id="modal-date"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="textEnt">"Plongez au cœur du temps et laissez-vous guider à travers les grandes époques de l’Histoire. Chaque événement, chaque découverte, chaque révolution a façonné le monde tel que nous le connaissons aujourd’hui. Cliquez sur la frise et explorez les moments qui ont marqué l’humanité."</p>
+  </div>
+</main>
+<footer>
+  <p class="copyright">© 2025 - Vanhelle Valentin</p>
+  <p class="citation">"Celui qui ne connaît pas l'histoire est condamné à la revivre." - George Santayana</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
