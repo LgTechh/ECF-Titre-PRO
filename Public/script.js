@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', async() => {
 
     const fetchEvents = async () => {
         try {
-            const response = await fetch('events.json');
+            const response = await fetch('http://localhost:3001/data/events.json');
             const data = await response.json();
             return data.events;
         } catch (error) {

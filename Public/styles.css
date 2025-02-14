@@ -19,6 +19,16 @@ body {
 
 }
 
+.body404 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: lightpink;
+
+}
+
 @media screen and (max-width: 767px) {
     .header {
         width: 100%;
