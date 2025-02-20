@@ -20,9 +20,6 @@
 1. Clonez ce repository : `git clone https://github.com/LgTechh/ECF-Titre-PRO`
 2. Lancez le fichier HTML.
 
-## Contribuer
-Les contributions sont les bienvenues ! Si vous avez des idées d'améliorations ou des corrections, n'hésitez pas à soumettre une **pull request**.
-
 ## Auteurs
 - LgTechh
 
